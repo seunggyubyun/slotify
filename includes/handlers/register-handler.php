@@ -28,12 +28,13 @@ if(isset($_POST['registerButton'])) {
     $email = sanitizeFormString($_POST['email']);
     $email2 = sanitizeFormString($_POST['email2']);
     $password = sanitizeFormPassword($_POST['password']);
-    $password2 = sanitizeFormString($_POST['password2']);
+    $password2 = sanitizeFormPassword($_POST['password2']);
 
     $successful = $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
 
     if($successful) {
+        $_SESSION['userLoggedIn'] = $username;
         header("Location: index.php");
     }
-};
+}
  ?>
