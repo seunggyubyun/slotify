@@ -5,7 +5,7 @@
 
     $timezone = date_default_timezone_set("Europe/London");
 
-    $con = mysqli_connect('us-cdbr-iron-east-05.cleardb.net', 'b17a7ef1815f66','d4247d8a', 'slotify');
+    $con = mysqli_connect('us-cdbr-iron-east-05.cleardb.net', 'b17a7ef1815f66','d4247d8a', 'heroku_40474938b3320f2');
 
     if(mysqli_connect_errno()) {
         echo "Failed to connect: " . mysqli_connect_errno();
