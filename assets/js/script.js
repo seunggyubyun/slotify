@@ -44,6 +44,10 @@ function updateVolumeProgressBar(audio) {
 
 }
 
+function playFirstSong() {
+    setTrack(tempPlaylist[0], tempPlaylist, true);
+}
+
 function Audio() {
 
     this.currentlyPlaying;
