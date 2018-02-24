@@ -17,11 +17,11 @@
 
          <div class="group">
              <div class="navItem">
-                 <span role="link" tabindex = "0" onclick="openPage('index.php')">Browse</span>
+                 <span role="link" tabindex = "0" onclick="openPage('browse.php')">Browse</span>
              </div>
 
              <div class="navItem">
-                 <span role="link" tabindex = "0" onclick="openPage('index.php')">Your music</span>
+                 <span role="link" tabindex = "0" onclick="openPage('yourMusic.php')">Your music</span>
              </div>
 
              <div class="navItem">
