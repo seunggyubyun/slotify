@@ -34,7 +34,7 @@ $owner = new User($con, $playlist->getOwner());
          foreach($songIdArray as $songId) {
 
              $playlistSong = new Song($con, $songId);
-             $albumArtist = $playlistSong->getArtist();
+             $songArtist = $playlistSong->getArtist();
 
              echo "<li class='tracklistRow'>
                 <div class='trackCount'>
@@ -45,7 +45,7 @@ $owner = new User($con, $playlist->getOwner());
 
                 <div class='trackInfo'>
                     <span class='trackName'>" .$playlistSong->getTitle() ."</span>
-                    <span class='artistName'>" . $albumArtist->getName() ."</span>
+                    <span class='artistName'>" . $songArtist->getName() ."</span>
                 </div>
 
                 <div class='trackOptions'>
@@ -77,6 +77,6 @@ $owner = new User($con, $playlist->getOwner());
     <input type="hidden" class="songId">
     <?php echo Playlist::getPlaylistDropdown($con, $userLoggedIn->getUsername()); ?>
     <div class="item" onclick="removeFromPlaylist(this, '<?php echo $playlistId; ?>')">
-        Remove from Playlist
+        Remove From Playlist
     </div>
 </nav>
