@@ -25,7 +25,7 @@
              </div>
 
              <div class="navItem">
-                 <span role="link" tabindex = "0" onclick="openPage('index.php')">Seunggyu</span>
+                 <span role="link" tabindex = "0" onclick="openPage('settings.php')"><?php echo $userLoggedIn->getFirstAndLastName(); ?></span>
              </div>
          </div>
     </nav>
